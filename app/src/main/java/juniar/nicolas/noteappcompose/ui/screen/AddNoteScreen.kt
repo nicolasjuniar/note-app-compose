@@ -1,4 +1,4 @@
-package juniar.nicolas.noteappcompose.ui
+package juniar.nicolas.noteappcompose.ui.screen
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer

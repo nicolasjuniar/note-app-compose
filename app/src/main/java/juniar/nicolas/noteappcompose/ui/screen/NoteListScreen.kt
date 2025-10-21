@@ -1,4 +1,4 @@
-package juniar.nicolas.noteappcompose.ui
+package juniar.nicolas.noteappcompose.ui.screen
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,13 +21,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import juniar.nicolas.noteappcompose.model.Note
+import juniar.nicolas.noteappcompose.data.local.NoteEntity
 
 @Composable
 fun NoteListScreen(
-    notes: List<Note>,
+    notes: List<NoteEntity>,
     onAddClick: () -> Unit,
-    onDeleteClick: (Note) -> Unit
+    onDeleteClick: (NoteEntity) -> Unit
 ) {
     Scaffold(
         floatingActionButton = {
